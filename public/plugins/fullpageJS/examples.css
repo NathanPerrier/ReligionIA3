@@ -137,7 +137,7 @@ p{
 #infoMenu li a{
 	display: block;
 	margin: 0 22px 0 0;
-	color: #333;
+	color: #fff;
 }
 #infoMenu li a:hover{
 	text-decoration:underline;
