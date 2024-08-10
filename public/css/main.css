@@ -114,3 +114,18 @@
     height: 100%; 
     text-align: center; 
 } */
+
+@media (max-width: 768px) {
+    #section1,
+    #section2,
+    #section3,
+    #section4,
+    #section5,
+    #slide1,
+    #slide2,
+    #slide3,
+    #slide4 {
+        background-size: contain; /* Adjust background-size for mobile devices */
+        background-attachment: scroll; /* Disable fixed background attachment for better performance on mobile */
+    }
+}
