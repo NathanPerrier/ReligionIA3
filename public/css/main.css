@@ -97,6 +97,15 @@
     z-index: 1; 
 }
 
+@media (max-width: 1000px) {
+    #section0 {
+        display: hidden;
+    }
+    #container {
+        display: none;
+    }
+}
+
 /* #section1 h1,
 #section2 h1,
 #section3 h1,
