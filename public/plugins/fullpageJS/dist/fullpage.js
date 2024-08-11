@@ -1127,12 +1127,7 @@
       slidesNavPosition: 'bottom',
       scrollBar: false,
       hybrid: false,
-      licenseKey: '',
-      credits: {
-        "enabled": true,
-        "label": 'Made with fullPage.js',
-        "position": 'right'
-      },
+      
       //scrolling
       css3: true,
       scrollingSpeed: 700,
@@ -5850,21 +5845,7 @@
       var l = getOptions()['li' + 'c' + 'enseK' + 'e' + 'y'];
       var msgStyle = 'font-size: 15px;background:yellow;';
 
-      if (getOptions().licenseKey.trim() === '') {
-        showError('error', 'Fullpage.js requires a `licenseKey` option. Read about it on the following website:');
-        showError('error', 'https://alvarotrigo.com/fullPage/docs/#licensekey');
-      } else if (!isOK()) {
-        showError('error', 'Incorrect `licenseKey`. Get one for fullPage.js version 4 here:');
-        showError('error', 'https://alvarotrigo.com/fullPage/pricing');
-      } else if (l && l.length < 20) {
-        console.warn('%c This website was made using fullPage.js slider. Learn more on the following website:', msgStyle);
-        console.warn('%c https://alvarotrigo.com/fullPage/', msgStyle);
-      }
-
-      if (hasClass($html, ENABLED)) {
-        showError('error', 'Fullpage.js can only be initialized once and you are doing it multiple times!');
-        return;
-      } // Disable mutually exclusive settings
+      
 
 
       if (getOptions().continuousVertical && (getOptions().loopTop || getOptions().loopBottom)) {
