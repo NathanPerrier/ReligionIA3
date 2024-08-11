@@ -121,13 +121,15 @@
 
         <script>
             document.addEventListener('DOMContentLoaded', function() {
-                const elements = document.querySelectorAll('*');
-                elements.forEach(element => {
-                    const zIndex = window.getComputedStyle(element).zIndex;
-                    if (zIndex === '9999999') {
-                        element.style.display = 'none';
-                    }
-                });
+                setTimeout(function() {
+                    const elements = document.querySelectorAll('*');
+                    elements.forEach(element => {
+                        const zIndex = window.getComputedStyle(element).zIndex;
+                        if (zIndex === '9999999') {
+                            element.style.zIndex = '-999';
+                        }
+                    });
+                }, 10);
             });
         </script>
 
