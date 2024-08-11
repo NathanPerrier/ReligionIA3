@@ -120,14 +120,15 @@
         <script type="text/javascript" src="./public/plugins/fullpageJS/dist/fullpage.scrollHorizontally.min.js"></script>
 
         <script>
-            const elements = document.querySelectorAll('*');
-            elements.forEach(element => {
-                const zIndex = window.getComputedStyle(element).zIndex;
-                if (zIndex === '9999999') {
-                    element.style.display = 'none';
-                }
+            document.addEventListener('DOMContentLoaded', function() {
+                const elements = document.querySelectorAll('*');
+                elements.forEach(element => {
+                    const zIndex = window.getComputedStyle(element).zIndex;
+                    if (zIndex === '9999999') {
+                        element.style.display = 'none';
+                    }
+                });
             });
-         
         </script>
 
         <!-- <script type="text/javascript" src="./public/plugins/fullpageJS/vendors/easings.js"></script> -->
