@@ -252,7 +252,9 @@
     * Shows a message in the console of the given type.
     */
 
-
+    function showError(type, text) {
+      win.console && win.console[type] && win.console[type]('fullPage: ' + text);
+    }
     function isVisible(el) {
       var style = win.getComputedStyle(el);
       return style.display !== 'none';
