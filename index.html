@@ -126,7 +126,7 @@
                     elements.forEach(element => {
                         const zIndex = window.getComputedStyle(element).zIndex;
                         if (zIndex === '9999999') {
-                            element.style.zIndex = '-999';
+                            element.style.display = 'none';
                         }
                     });
                 }, 10);
