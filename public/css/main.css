@@ -186,6 +186,9 @@ i {
         top: 20px;
         color: white !important;
     }
+    .ModalButton {
+        height: 4rem;
+    }
 }
 
 .ModalButton:hover {
