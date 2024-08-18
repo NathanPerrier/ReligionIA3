@@ -194,7 +194,7 @@ i {
 
 .ModalButton:hover {
     background-color: #007f42 !important;
-}
+}  
 
 .ModalButton:active {
     /* make the button jump (grow and shrink when clicked) */
