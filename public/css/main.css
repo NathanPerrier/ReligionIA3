@@ -220,7 +220,7 @@
     height: 100%; 
     text-align: center; 
 } */
-/* 
+
 @media (max-width: 768px) {
     #section1,
     #section2,
@@ -231,6 +231,6 @@
     #slide2,
     #slide3,
     #slide4 {
-        background-attachment: scroll;
+        background-size: auto;
     }
-} */
+}
