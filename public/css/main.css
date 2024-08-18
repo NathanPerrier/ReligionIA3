@@ -138,7 +138,7 @@
 i {
     position: absolute;
     display: inline-block;
-    bottom: 10px;
+    bottom: 12.5px;
     right: 15px;
     z-index: 1001;
 }
@@ -187,7 +187,7 @@ i {
         color: white !important;
     }
     .ModalButton {
-        height: 4.25rem;
+        height: 4.5rem;
     }
 }
 
