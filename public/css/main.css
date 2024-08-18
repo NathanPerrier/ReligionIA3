@@ -1,13 +1,19 @@
-#section1{
-    background-image: url(../images/slide1/jazz.jpg);
+@import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&display=swap');
+
+* {
+    font-family: "Anek Devanagari", sans-serif;
+}
+
+#section1 {
+    background-image: url(../images/slide5/1.jpg);
 }
 
 #section1 #slide1 {
-    background-image: url(../images/slide1/music.jpg);
+    background-image: url(../images/slide5/2.jpg);
 }
 
 #section1 #slide2 {
-    background-image: url(../images/slide1/Student-Life-Music-4.jpg);
+    background-image: url(../images/slide5/3.jpg);
 }
 
 #section2{
@@ -23,44 +29,46 @@
 }
 
 #section3{
-    background-image: url(../images/slide3/soccer1.jpg);
+    background-image: url(../images/slide4/1.jpg); /* change pic */
 }
 
 #section3 #slide1 {
-    background-image: url(../images/slide3/soccer2.jpg);
-}
-
-#section3 #slide2 {
-    background-image: url(../images/slide3/soccer3.jpg);
-}
-
-#section3 #slide3 {
-    background-image: url(../images/slide3/soccer4.jpg);
-}
-
-#section4{
-    background-image: url(../images/slide4/1.jpg);
-}
-
-#section4 #slide1 {
     background-image: url(../images/slide4/2.jpg);
 }
 
-#section4 #slide2 {
+#section3 #slide2 {
     background-image: url(../images/slide4/4.webp);
 }
 
-#section5 {
-    background-image: url(../images/slide5/1.jpg);
+#section4{
+    background-image: url(../images/slide3/soccer1.jpg);
+}
+
+#section4 #slide1 {
+    background-image: url(../images/slide3/soccer2.jpg);
+}
+
+#section4 #slide2 {
+    background-image: url(../images/slide3/soccer3.jpg);
+}
+
+#section4 #slide3 {
+    background-image: url(../images/slide3/soccer4.jpg);
+}
+
+#section5{
+    background-image: url(../images/slide1/jazz.jpg);
 }
 
 #section5 #slide1 {
-    background-image: url(../images/slide5/2.jpg);
+    background-image: url(../images/slide1/music.jpg);
 }
 
 #section5 #slide2 {
-    background-image: url(../images/slide5/3.jpg);
+    background-image: url(../images/slide1/Student-Life-Music-4.jpg);
 }
+
+
 
 #section1,
 #section2,
@@ -103,6 +111,95 @@
     }
     #container {
         display: none;
+    }
+}
+
+/* Modals */
+
+/* ModalButton ROUND circle in bottom left and is always visable */
+.ModalButton {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    z-index: 1000;
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: #00944d;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.hystmodal__wrap {
+    background-color: rgba(0, 0, 0, 0.65);
+    border-radius: none;
+}
+
+.hystmodal__window {
+    border-radius: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin: 2rem;
+}
+
+.hystmodal__window h1 {
+    margin: 0;
+    padding: 1rem;
+    background-color: #00944d;
+    color: white;
+    font-family: "Anek Devanagari", sans-serif;
+    font-weight: bold;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+}
+
+.hystmodal__window p {
+    padding: .5rem;
+    font-size: 1.25rem;
+    text-align: justify;
+    text-justify: inter-word;
+    font-family: "Anek Devanagari", sans-serif;
+}
+
+
+@media screen and (max-width: 768px) {
+    .hystmodal__wrap {
+        padding: 2rem;
+    }
+    .hystmodal__window {
+        margin: 0;
+    }
+    .hystmodal__close {
+        right: 20px;
+        top: 20px;
+        color: white !important;
+    }
+}
+
+.ModalButton:hover {
+    background-color: #007f42 !important;
+}
+
+.ModalButton:active {
+    /* make the button jump (grow and shrink when clicked) */
+    transform: scale(0.9);
+    transition: transform 0.1s;
+}
+
+.ModalButton .ripple {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.6);
+    transform: scale(0);
+    animation: ripple-animation 0.6s linear;
+}
+
+@keyframes ripple-animation {
+    to {
+        transform: scale(4);
+        opacity: 0;
     }
 }
 

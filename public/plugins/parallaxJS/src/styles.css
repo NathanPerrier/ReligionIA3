@@ -1,4 +1,4 @@
-@import url("http://fonts.googleapis.com/css?family=Dosis:600|Roboto+Slab:100,300,400,700");
+@import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&display=swap');
 article,
 aside,
 details,
@@ -262,7 +262,7 @@ button {
   background-clip: padding-box;
   font-size: 1.33333em;
   line-height: 45.6px;
-  font-family: "Dosis", sans-serif;
+  font-family: "Anek Devanagari", sans-serif;
   background-color: #F2F2F2;
   font-weight: 600;
   height: 48px;
@@ -513,7 +513,7 @@ footer {
       .about .panel .links a {
         -webkit-font-smoothing: antialiased;
         font-size: 1.33333em;
-        font-family: "Dosis", sans-serif;
+        font-family: "Anek Devanagari", sans-serif;
         text-transform: uppercase;
         font-weight: 600;
         padding: 1em 0 1.1em;
