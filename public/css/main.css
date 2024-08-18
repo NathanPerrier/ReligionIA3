@@ -231,8 +231,8 @@
     #slide2,
     #slide3,
     #slide4 {
-        background-size: contain; /* Ensure the entire image is visible */
-        background-position: center; /* Center the background image */
+        background-size: contain !important; /* Ensure the entire image is visible */
+        background-position: center !important; /* Center the background image */
         background-attachment: scroll; /* Disable fixed background attachment for better performance on mobile */
     }
 }
