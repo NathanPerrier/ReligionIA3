@@ -187,7 +187,7 @@ i {
         color: white !important;
     }
     .ModalButton {
-        height: 4rem;
+        height: 4.25rem;
     }
 }
 
@@ -246,6 +246,6 @@ i {
     #slide4 {
         background-size: cover !important; /* Ensure the entire image is visible */
         background-position: center !important; /* Center the background image */
-        background-attachment: scroll !important; /* Disable fixed background attachment for better performance on mobile */
+      
     }
 }
