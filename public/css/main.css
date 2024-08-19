@@ -245,8 +245,8 @@ i {
     #slide2,
     #slide3,
     #slide4 {
-        background-size: cover !important; /* Ensure the entire image is visible */
+        background-size: contain !important; /* Ensure the entire image is visible */
         background-position: center !important; /* Center the background image */
-        background-attachment: fixed !important; /* Ensure the background image does not move */
+        background-attachment: scroll !important; /* Ensure the background image does not move */
     }
 }
