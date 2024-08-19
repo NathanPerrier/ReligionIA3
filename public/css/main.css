@@ -252,7 +252,7 @@ i {
     #slide2,
     #slide3,
     #slide4 {
-        background-size: contain 100% !important; /* Ensure the entire image is visible */
+        background-size: contain 100vw !important; /* Ensure the entire image is visible */
         background-position: center !important; /* Center the background image */
         background-attachment: fixed !important; /* Ensure the background image does not move */
         background-repeat: no-repeat !important; /* Prevent the image from repeating */
